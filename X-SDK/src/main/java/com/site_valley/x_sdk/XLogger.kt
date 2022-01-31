@@ -1,13 +1,12 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 31/01/22, 3:24 PM
+ * Last Updated on 31/01/22, 4:04 PM
  */
 
 package com.site_valley.x_sdk
 
 import android.util.Log
-import com.google.gson.Gson
 
 object XLogger {
 
@@ -18,17 +17,10 @@ object XLogger {
      */
     fun logE(any: Any) {
         try {
-            Log.e("XLogger:: ", Gson().toJson(any))
+            Log.e("XLogger:: ", XObjects.getStringFromObject(any).toString())
         } catch (e: Exception) {
             Log.e("XLogger Error:: ", e.localizedMessage.toString())
         }
     }
-
-    fun logOnDebugE(any: Any) {
-        if (BuildConfig.DEBUG) {
-            logE(any)
-        }
-    }
-
 
 }
