@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by abhinav for ETAOP Pvt. Ltd.
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last Updated on 31/01/22, 3:06 PM
+  -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.site_valley.x_sdk">
+
+    <application>
+        <activity
+            android:name=".SampleSDKActivity"
+            android:exported="false" />
+    </application>
 
 </manifest>
