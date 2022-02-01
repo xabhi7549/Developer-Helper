@@ -20,7 +20,7 @@ allprojects {
 - Add the dependency
 
 ```
-dependencies {
-	implementation 'com.github.xabhi7549:Developer-Helper:1.0.1'
+	dependencies {
+	        implementation 'com.github.xabhi7549:Developer-Helper:1.0.1'
 	}
 ```
