@@ -1,7 +1,8 @@
+[![](https://jitpack.io/v/xabhi7549/Devloper-Helper.svg)](https://jitpack.io/#xabhi7549/Devloper-Helper)
+
 # Developer Helper
 ## _Single SDK Contains All Common SDKs Used By Android Developer_
 
-[![](https://jitpack.io/v/xabhi7549/Devloper-Helper.svg)](https://jitpack.io/#xabhi7549/Devloper-Helper)
 
 
 - Add it in your root build.gradle at the end of repositories:
