@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/xabhi7549/Devloper-Helper.svg)](https://jitpack.io/#xabhi7549/Devloper-Helper)
+[![](https://jitpack.io/v/xabhi7549/Developer-Helper.svg)](https://jitpack.io/#xabhi7549/Developer-Helper)
 
 # Developer Helper
 ## _Single SDK Contains All Common SDKs Used By Android Developer_
