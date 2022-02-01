@@ -21,6 +21,6 @@ allprojects {
 
 ```
 dependencies {
-	        implementation 'com.github.xabhi7549:Devloper-Helper:1.0.0'
+	implementation 'com.github.xabhi7549:Developer-Helper:1.0.1'
 	}
 ```
