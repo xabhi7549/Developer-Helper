@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 05/02/22, 9:00 PM
+ * Last Updated on 05/02/22, 9:01 PM
  */
 
 package com.site_valley.x_sdk
@@ -25,6 +25,7 @@ object XLogger {
 
     /**
      * Logs Always
+     * @param key string that you want to show
      * @param any Any Object Or String
      *
      */
