@@ -1,6 +1,5 @@
 [![](https://jitpack.io/v/xabhi7549/Developer-Helper.svg)](https://jitpack.io/#xabhi7549/Developer-Helper)
 [![Android CI](https://github.com/xabhi7549/Developer-Helper/actions/workflows/android.yml/badge.svg)](https://github.com/xabhi7549/Developer-Helper/actions/workflows/android.yml)
-
 # Developer Helper
 ## _Single SDK Contains All Common SDKs Used By Android Developer_
 
