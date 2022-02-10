@@ -32,11 +32,6 @@ jobs:
           java-version: 11
       - name: Build debug APK
         run: bash ./gradlew assembleDebug --stacktrace
-      - name: Upload APK
-        uses: actions/upload-artifact@v1
-        with:
-          name: app
-          path: app/build/outputs/apk/debug/*.apk
       - name: Create Release Build
         id: signArtifact
         uses: r0adkll/sign-android-release@v1.0.1
