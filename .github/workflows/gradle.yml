@@ -19,13 +19,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 11
-      uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-    - name: Build with Gradle
-      uses: gradle/assembleDebug
-      with:
-        arguments: build
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          assembleDebug
+      - name: Run Kotlin Linter
+        run: ./gradlew ktlintStagingDebugCheck
+      - name: Run Unit Tests
+        run: ./gradlew testStagingDebugUnitTest
+      - name: Build with Gradle
+        uses: gradle/assembleDebug
+        with:
+          arguments: build
