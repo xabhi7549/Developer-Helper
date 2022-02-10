@@ -46,7 +46,7 @@ jobs:
       - name: Github Data
         run: echo ${{ github.event.release }}
       - name: Github Event
-        run: echo ${{ abhi }}
+        run: echo ${{ github.event }}
       - name: Github ENV
         run: echo ${{ github.env.test }}
       - name: Upload our APK
