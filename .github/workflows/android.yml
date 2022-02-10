@@ -43,24 +43,26 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }}
       - name: Github Sec
         run: echo ${{ secrets }}
-      - name: Github Data
-        run: echo ${{ github }}
-      - name: Github Event
-        run: echo ${{ github.event }}
-      - name: Github ENV
-        run: echo ${{ env }}
-      - name: Upload our APK
-        uses: actions/upload-artifact@v2.2.0
-        with:
-          name: Release artifact
-          path: app/build/outputs/apk/ourbuildtype/release/*.apk
-      - name: Create Release For SDK
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.event.release.tag_name }}
-          release_name: Release ${{ github.event.release.tag_name }}
-          draft: false
-          prerelease: false
+      bash: |
+        echo $(secrets)
+        - name: Github Data
+          run: echo ${{ github }}
+        - name: Github Event
+          run: echo ${{ github.event }}
+        - name: Github ENV
+          run: echo ${{ env }}
+        - name: Upload our APK
+          uses: actions/upload-artifact@v2.2.0
+          with:
+            name: Release artifact
+            path: app/build/outputs/apk/ourbuildtype/release/*.apk
+        - name: Create Release For SDK
+          id: create_release
+          uses: actions/create-release@v1
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            tag_name: ${{ github.event.release.tag_name }}
+            release_name: Release ${{ github.event.release.tag_name }}
+            draft: false
+            prerelease: false
