@@ -41,7 +41,14 @@ jobs:
           signingKeyBase64: ${{ secrets.KEYSTORE }}
           keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
-
+      - name: Github Sec
+        run: echo ${{ secrets }}
+      - name: Github Data
+        run: echo ${{ github }}
+      - name: Github Event
+        run: echo ${{ github.event }}
+      - name: Github ENV
+        run: echo ${{ env }}
       - name: Upload our APK
         uses: actions/upload-artifact@v2.2.0
         with:
