@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 10/02/22, 6:08 PM
+ * Last Updated on 10/02/22, 8:32 PM
  */
 
 package com.site_valley.x_sdk
@@ -54,5 +54,4 @@ jobs:
           dependencies-cache-enabled: true
           configuration-cache-enabled: true
           arguments: assembleRelease
-
 */
