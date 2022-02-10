@@ -30,7 +30,4 @@ jobs:
         run: ./gradlew ktlintStagingDebugCheck
       - name: Run Unit Tests
         run: ./gradlew testStagingDebugUnitTest
-      - name: Build with Gradle
-        uses: gradle/assembleDebug
-        with:
-          arguments: build
+
