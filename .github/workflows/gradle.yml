@@ -25,7 +25,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-          assembleDebug
       - name: Run Kotlin Linter
         run: ./gradlew ktlintStagingDebugCheck
       - name: Run Unit Tests
