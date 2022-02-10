@@ -37,7 +37,22 @@ jobs:
         with:
           name: app
           path: app/build/outputs/apk/debug/app-debug.apk
-      - name: Create Release
+      - name: Create Release Build
+        id: signArtifact
+        uses: r0adkll/sign-android-release@v1.0.1
+        with:
+          releaseDirectory: app/build/outputs/apk/ourbuildtype/release
+          alias: ${{ secrets.KEYALIAS }}
+          signingKeyBase64: ${{ secrets.KEYSTORE }}
+          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+
+      - name: Upload our APK
+        uses: actions/upload-artifact@v2.2.0
+        with:
+          name: Release artifact
+          path: app/build/outputs/apk/ourbuildtype/release/app-artifact-*.apk
+      - name: Create Release For SDK
         id: create_release
         uses: actions/create-release@v1
         env:

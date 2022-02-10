@@ -1,3 +1,9 @@
+/*
+ * Created by abhinav for ETAOP Pvt. Ltd.
+ * Copyright (c) 2022 . All rights reserved.
+ * Last Updated on 10/02/22, 11:40 PM
+ */
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -11,7 +17,7 @@ android {
         minSdk 21
         targetSdk 31
         versionCode 1
-        versionName "1.0.0"
+        versionName "2.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -20,6 +26,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "app-${variant.buildType.name}-${variant.versionName}.apk"
+            }
         }
     }
     compileOptions {
