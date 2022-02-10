@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: app
-          path: app/build/outputs/apk/debug/app-artifact-*.apk
+          path: app/build/outputs/apk/debug/*.apk
       - name: Create Release Build
         id: signArtifact
         uses: r0adkll/sign-android-release@v1.0.1
@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-artifact@v2.2.0
         with:
           name: Release artifact
-          path: app/build/outputs/apk/ourbuildtype/release/app-artifact-*.apk
+          path: app/build/outputs/apk/ourbuildtype/release/*.apk
       - name: Create Release For SDK
         id: create_release
         uses: actions/create-release@v1
