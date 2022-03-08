@@ -19,4 +19,15 @@ jobs:
           java-version: 11
       - name: Unit tests
         run: bash ./gradlew test --stacktrace
-
+      - name: Make Gradle executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        run: ./gradlew build
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug
+      - name: Releasing using Hub
+        uses: valley-fordham/action-release-debugapk@master
+        env:
+         GITHUB_TOKEN: ${{ secrets.TOKEN }}
+         APP_FOLDER: app
+         RELEASE_TITLE: New Build
