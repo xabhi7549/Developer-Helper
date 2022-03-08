@@ -30,12 +30,8 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build with Gradle
         run: ./gradlew build
-      branches:
-        only: dev
       - name: Build Debug APK
         run: ./gradlew assembleDebug
-      branches:
-        only: master
-                - name: Build Debug APK For Master
-                run: ./gradlew assembleDebug
+      - name: RunningOn
+        run: echo {{github.ref}}
 
