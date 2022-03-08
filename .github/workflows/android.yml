@@ -37,6 +37,14 @@ jobs:
         id: upload
         with:
           name: 'my-artifact'
-          path: app/build/intermediates/apk/debug/
-      - name: 'Echo download path'
-        run: echo ${{steps.upload.outputs.upload-path}}
+          path: my-artifact
+          - uses: actions/download-artifact@v3
+              id: download
+              with:
+                name: 'my-artifact2'
+                path: my-artifact2
+                  - name: 'Echo download path'
+                - name: 'Echo upload path'
+                    run:
+                      echo ${{steps.upload.outputs.upload-path}}
+                      echo ${{steps.download.outputs.download-path}}
