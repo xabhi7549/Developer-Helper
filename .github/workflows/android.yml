@@ -34,5 +34,4 @@ jobs:
       - name: Build Debug APK
         run: ./gradlew assembleDebug
       artifacts:
-        paths:
-          - app/
+        path: app/
