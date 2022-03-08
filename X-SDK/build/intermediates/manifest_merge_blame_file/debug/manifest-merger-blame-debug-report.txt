@@ -1,0 +1,20 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Created by abhinav for ETAOP Pvt. Ltd.
+4  ~ Copyright (c) 2022 . All rights reserved.
+5  ~ Last Updated on 08/03/22, 10:48 AM
+6-->
+7<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+8    package="com.site_valley.x_sdk" >
+9
+10    <uses-sdk
+11        android:minSdkVersion="21"
+11-->/Users/abhinav/Android/Developer-Helper/X-SDK/src/main/AndroidManifest.xml
+12        android:targetSdkVersion="31" />
+12-->/Users/abhinav/Android/Developer-Helper/X-SDK/src/main/AndroidManifest.xml
+13
+14    <application>
+14-->/Users/abhinav/Android/Developer-Helper/X-SDK/src/main/AndroidManifest.xml:10:5-12:19
+15    </application>
+16
+17</manifest>
