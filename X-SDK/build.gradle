@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 05/02/22, 9:02 PM
+ * Last Updated on 08/03/22, 12:48 PM
  */
 
 plugins {
@@ -32,6 +32,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    task generateVersionTxt {
+        doLast {
+            file("./version.txt").text = android.defaultConfig.versionName
+        }
     }
 }
 
