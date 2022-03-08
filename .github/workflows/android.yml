@@ -33,5 +33,10 @@ jobs:
       - name: Build Debug APK
         run: ./gradlew assembleDebug
       - name: RunningOn
-        run: echo {{github.ref}}
+        run: echo github.ref
+      - name: Upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: Build Artifacts
+          path: app/build/intermediates/apk/debug/
 
