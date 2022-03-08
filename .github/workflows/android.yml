@@ -34,6 +34,8 @@ jobs:
         run: ./gradlew assembleDebug
       - name: RunningOn
         run: echo ${{ github.ref }}
+      - name: VersionTag
+        run: echo ${{ steps.get_version.outputs.VERSION }}
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
@@ -47,7 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           tag_name: v5.0.7
-          asset_path: app/build/outputs/apk/debug/app-debug-2.0.0.apk
+          asset_path: app/build/intermediates/apk/debug/app-debug-2.0.0.apk
           asset_name: Example.apk
           asset_content_type: application/zip
 
