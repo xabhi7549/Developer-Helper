@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 10/02/22, 5:02 PM
+ * Last Updated on 08/03/22, 2:19 PM
  */
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
@@ -17,6 +17,7 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+
 }
 
 task clean(type: Delete) {

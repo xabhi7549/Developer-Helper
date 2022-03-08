@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 08/03/22, 12:54 PM
+ * Last Updated on 08/03/22, 2:26 PM
  */
 
 plugins {
@@ -17,7 +17,7 @@ android {
         minSdk 21
         targetSdk 31
         versionCode 1
-        versionName "2.0.0"
+        versionName "2.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
