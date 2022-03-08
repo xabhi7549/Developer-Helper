@@ -2,7 +2,7 @@
 2<!--
 3  ~ Created by abhinav for ETAOP Pvt. Ltd.
 4  ~ Copyright (c) 2022 . All rights reserved.
-5  ~ Last Updated on 08/03/22, 10:48 AM
+5  ~ Last Updated on 08/03/22, 4:43 PM
 6-->
 7<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 8    package="com.site_valley.x_sdk" >
