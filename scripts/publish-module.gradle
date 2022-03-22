@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 22/03/22, 9:49 AM
+ * Last Updated on 22/03/22, 10:00 AM
  */
 
 apply plugin: 'maven-publish'
@@ -62,7 +62,7 @@ afterEvaluate {
                 // Mostly self-explanatory metadata
                 pom {
                     name = PUBLISH_ARTIFACT_ID
-                    description = 'Encryption SDK'
+                    description = 'Developer Helper SDK'
                     url = 'https://github.com/xabhi7549/Developer-Helper'
                     licenses {
                         license {

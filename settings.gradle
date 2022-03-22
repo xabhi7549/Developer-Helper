@@ -1,8 +1,16 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 09/03/22, 9:32 AM
+ * Last Updated on 22/03/22, 10:03 AM
  */
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)

@@ -20,7 +20,7 @@ jobs:
           java-version: 11
       - name: Release build
         # assembleRelease for all modules, excluding non-library modules: samples, docs
-        run: ./gradlew clean assembleRelease -x :encryptor-android:assembleRelease -x :encryptor-java-kotlin:assemble
+        run: ./gradlew clean assembleRelease -x :X-SDK:assembleRelease #-x :encryptor-java-kotlin:assemble
       - name: Source jar and dokka
         run: ./gradlew androidSourcesJar javadocJar
       - name: Publish to MavenCentral
