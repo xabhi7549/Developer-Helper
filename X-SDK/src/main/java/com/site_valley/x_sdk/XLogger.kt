@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 05/02/22, 9:01 PM
+ * Last Updated on 22/03/22, 8:23 AM
  */
 
 package com.site_valley.x_sdk
@@ -15,7 +15,7 @@ object XLogger {
      * @param any Any Object Or String
      *
      */
-    fun logE(any: Any) {
+    fun logE(any: Any?) {
         try {
             Log.e("XLogger:: ", XObjects.getStringFromObject(any).toString())
         } catch (e: Exception) {
@@ -29,7 +29,7 @@ object XLogger {
      * @param any Any Object Or String
      *
      */
-    fun logE(key: String, any: Any) {
+    fun logE(key: String, any: Any?) {
         try {
             Log.e("XLogger:: $key :", XObjects.getStringFromObject(any).toString())
         } catch (e: Exception) {

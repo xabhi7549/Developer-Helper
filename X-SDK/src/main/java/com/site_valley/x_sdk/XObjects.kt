@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 31/01/22, 4:04 PM
+ * Last Updated on 22/03/22, 8:26 AM
  */
 
 package com.site_valley.x_sdk
@@ -17,8 +17,12 @@ object XObjects {
     }
 
     @Throws(JsonIOException::class)
-    fun getStringFromObject(any: Any): String? {
-        return XGson.getXGson().toJson(any)
+    fun getStringFromObject(any: Any?): String? {
+        return if (any != null) {
+            XGson.getXGson().toJson(any)
+        } else {
+            null
+        }
     }
 
 }

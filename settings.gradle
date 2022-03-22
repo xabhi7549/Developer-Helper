@@ -1,8 +1,15 @@
+/*
+ * Created by abhinav for ETAOP Pvt. Ltd.
+ * Copyright (c) 2022 . All rights reserved.
+ * Last Updated on 09/03/22, 9:32 AM
+ */
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
