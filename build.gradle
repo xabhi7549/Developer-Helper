@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 22/03/22, 10:03 AM
+ * Last Updated on 27/03/22, 6:06 PM
  */
 
 
@@ -21,4 +21,4 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-apply from: "${rootDir}/scripts/publish-root.gradle"
+//apply from: "${rootDir}/scripts/publish-root.gradle"

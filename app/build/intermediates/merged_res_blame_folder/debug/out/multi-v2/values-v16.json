@@ -4,7 +4,7 @@
             "outputFile": "/Users/abhinav/Android/Developer-Helper/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/abhinav/.gradle/caches/transforms-3/d2be0a07ac682004ffbddd9c163a1cf7/transformed/appcompat-1.4.1/res/values-v16/values-v16.xml",
+                    "source": "/Users/abhinav/.gradle/caches/transforms-3/ac6aefcc204fc2a446c5bcb148bd60ec/transformed/appcompat-1.4.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/abhinav/.gradle/caches/transforms-3/adacc4bbdca3c037c01e5031782c646c/transformed/core-1.7.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/abhinav/.gradle/caches/transforms-3/b3c5377c80077e50e5c28f8f61440fbc/transformed/core-1.7.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

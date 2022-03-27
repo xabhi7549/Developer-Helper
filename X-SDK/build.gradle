@@ -1,7 +1,7 @@
 /*
  * Created by abhinav for ETAOP Pvt. Ltd.
  * Copyright (c) 2022 . All rights reserved.
- * Last Updated on 22/03/22, 10:00 AM
+ * Last Updated on 27/03/22, 5:57 PM
  */
 
 plugins {
@@ -52,7 +52,7 @@ dependencies {
 
 ext {
     PUBLISH_GROUP_ID = 'com.site-valley'
-    PUBLISH_VERSION = version
+    PUBLISH_VERSION = '1.0.0'
     PUBLISH_ARTIFACT_ID = 'X-SDK'
 }
 
